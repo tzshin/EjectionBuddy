@@ -1320,6 +1320,16 @@
 		)
 		(uuid f2b0c733-e196-4f9b-a9eb-35c612e0836c)
 	)
+	(text "Low-ESR\ne-cap"
+		(exclude_from_sim no)
+		(at 131.572 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "24ac5476-3654-488a-ab9f-aa3af8a5a853")
+	)
 	(text "3.3V LDO"
 		(exclude_from_sim no)
 		(at 60.96 33.528 0)

@@ -954,7 +954,7 @@
 	)
 	(text "V_{out} = 0.1 * V_{in}"
 		(exclude_from_sim no)
-		(at 50.038 150.622 0)
+		(at 49.276 152.908 0)
 		(effects
 			(font
 				(size 1.27 1.27)

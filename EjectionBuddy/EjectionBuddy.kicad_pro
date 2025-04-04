@@ -415,7 +415,7 @@
     ],
     [
       "7d5b3764-35f0-45b9-bad5-01eae0264b82",
-      "connector"
+      "connecter"
     ],
     [
       "5ef685fe-bc2c-46ca-aa8b-f5bab32531ba",
@@ -424,6 +424,10 @@
     [
       "3a53a976-0a1f-4550-b46f-9acfd9ed9642",
       "usb"
+    ],
+    [
+      "38e71ba9-2f99-4f18-bcf1-7d478364853f",
+      "side_mcu"
     ]
   ],
   "text_variables": {}
