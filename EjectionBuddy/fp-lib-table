@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "HoleNoMask_M4")(type "KiCad")(uri "C:/warehouse/pcb/EjectionBuddy/kicad_libs/HoleNoMask/HoleNoMask_M4.pretty")(options "")(descr ""))
+  (lib (name "MP4462BuckModule_TaoBao_20x17")(type "KiCad")(uri "C:/warehouse/pcb/EjectionBuddy/kicad_libs/GenericBuck/MP4462BuckModule_TaoBao_20x17.pretty")(options "")(descr ""))
+  (lib (name "CustomPads")(type "KiCad")(uri "C:/warehouse/pcb/EjectionBuddy/kicad_libs/CustomPads/CustomPads.pretty")(options "")(descr ""))
+)

@@ -117,7 +117,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "HoleNoMask_M4:HoleNoMask_4.3mm_M4"
 			(at 25.4 63.5 0)
 			(effects
 				(font
@@ -146,7 +146,7 @@
 		)
 		(instances
 			(project "EjectionBuddy"
-				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/5ef685fe-bc2c-46ca-aa8b-f5bab32531ba"
+				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/dc6dc8d0-470f-4975-8c29-8cff8cdf32db"
 					(reference "H4")
 					(unit 1)
 				)
@@ -181,7 +181,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "HoleNoMask_M4:HoleNoMask_4.3mm_M4"
 			(at 25.4 25.4 0)
 			(effects
 				(font
@@ -209,8 +209,8 @@
 			)
 		)
 		(instances
-			(project ""
-				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/5ef685fe-bc2c-46ca-aa8b-f5bab32531ba"
+			(project "EjectionBuddy"
+				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/dc6dc8d0-470f-4975-8c29-8cff8cdf32db"
 					(reference "H1")
 					(unit 1)
 				)
@@ -245,7 +245,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "HoleNoMask_M4:HoleNoMask_4.3mm_M4"
 			(at 25.4 50.8 0)
 			(effects
 				(font
@@ -274,7 +274,7 @@
 		)
 		(instances
 			(project "EjectionBuddy"
-				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/5ef685fe-bc2c-46ca-aa8b-f5bab32531ba"
+				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/dc6dc8d0-470f-4975-8c29-8cff8cdf32db"
 					(reference "H3")
 					(unit 1)
 				)
@@ -309,7 +309,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "HoleNoMask_M4:HoleNoMask_4.3mm_M4"
 			(at 25.4 38.1 0)
 			(effects
 				(font
@@ -338,7 +338,7 @@
 		)
 		(instances
 			(project "EjectionBuddy"
-				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/5ef685fe-bc2c-46ca-aa8b-f5bab32531ba"
+				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/dc6dc8d0-470f-4975-8c29-8cff8cdf32db"
 					(reference "H2")
 					(unit 1)
 				)

@@ -1,6 +1,9 @@
 (sym_lib_table
   (version 7)
-  (lib (name "NCE55P04S")(type "KiCad")(uri "D:/pcb/EjectionBuddy/kicad_libs/NCE55P04S/NCE55P04S.kicad_sym")(options "")(descr ""))
-  (lib (name "GenericBuck")(type "KiCad")(uri "D:/pcb/EjectionBuddy/kicad_libs/GenericBuck/GenericBuck.kicad_sym")(options "")(descr ""))
-  (lib (name "LM66200DRLR")(type "KiCad")(uri "D:/pcb/EjectionBuddy/kicad_libs/LM66200DRLR/LM66200DRLR.kicad_sym")(options "")(descr ""))
+  (lib (name "GenericBuck")(type "KiCad")(uri "C:/warehouse/pcb/EjectionBuddy/kicad_libs/GenericBuck/GenericBuck_5V.kicad_sym")(options "")(descr ""))
+  (lib (name "LM66200DRLR")(type "KiCad")(uri "C:/warehouse/pcb/EjectionBuddy/kicad_libs/LM66200DRLR/LM66200DRLR.kicad_sym")(options "")(descr ""))
+  (lib (name "ME6203")(type "KiCad")(uri "C:/warehouse/pcb/EjectionBuddy/kicad_libs/ME6203/ME6203.kicad_sym")(options "")(descr ""))
+  (lib (name "NCE55P04S")(type "KiCad")(uri "C:/warehouse/pcb/EjectionBuddy/kicad_libs/NCE55P04S/NCE55P04S.kicad_sym")(options "")(descr ""))
+  (lib (name "INA186")(type "KiCad")(uri "C:/warehouse/pcb/EjectionBuddy/kicad_libs/INA186/INA186.kicad_sym")(options "")(descr ""))
+  (lib (name "CustomPads")(type "KiCad")(uri "C:/warehouse/pcb/EjectionBuddy/kicad_libs/CustomPads/CustomPads.kicad_sym")(options "")(descr ""))
 )

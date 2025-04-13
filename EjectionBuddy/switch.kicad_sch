@@ -585,192 +585,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:SolderJumper_2_Open"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at 0 2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SolderJumper_2_Open"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Solder Jumper, 2-pole, open"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "solder jumper SPST"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SolderJumper*Open*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SolderJumper_2_Open_0_1"
-				(polyline
-					(pts
-						(xy -0.254 1.016) (xy -0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.016) (xy 0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SolderJumper_2_Open_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "NCE55P04S:NCE55P04S"
 			(pin_names
 				(hide yes)
@@ -1797,7 +1611,7 @@
 	)
 	(text "Safety*"
 		(exclude_from_sim no)
-		(at 48.768 80.01 0)
+		(at 48.514 80.264 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1814,6 +1628,26 @@
 			)
 		)
 		(uuid "4519cca5-9e69-4639-91e1-6199b1e84f90")
+	)
+	(text "V_{Z} 7.5V"
+		(exclude_from_sim no)
+		(at 152.4 42.164 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "55b0d246-acd6-4060-ae5d-1f781855e842")
+	)
+	(text "Unused"
+		(exclude_from_sim no)
+		(at 258.572 98.044 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "750f22ab-6d7d-4674-9eef-c799b972b296")
 	)
 	(text "More to the BJT base shunting resistor:\nhttps://electronics.stackexchange.com/questions/30017/\nwhich-configuration-is-better-for-pulling-down-an-npn-transistors-base"
 		(exclude_from_sim no)
@@ -1836,9 +1670,19 @@
 		)
 		(uuid "97434d9d-b3bc-436a-a6a3-495cf8974a5e")
 	)
-	(text "Put those close to their output terminals"
+	(text "V_{Z} 7.5V"
 		(exclude_from_sim no)
-		(at 243.586 159.004 0)
+		(at 113.03 137.414 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9b59901a-f72c-45fa-bcdb-dd0b979dd95f")
+	)
+	(text "Put those close to their output terminals\n"
+		(exclude_from_sim no)
+		(at 248.666 152.654 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1892,6 +1736,22 @@
 			(justify left)
 		)
 		(uuid "f5b17ea5-7875-4edc-91d0-82af1b9ddc19")
+	)
+	(text "V_{Z} 7.5V"
+		(exclude_from_sim no)
+		(at 234.95 42.164 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f670e722-8d8c-4612-b8f6-afcbc99c11cb")
+	)
+	(junction
+		(at 255.27 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0054b012-e389-432f-a24d-92918a70ceed")
 	)
 	(junction
 		(at 106.68 147.32)
@@ -1970,6 +1830,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bb50579f-2618-403d-8b8b-85d967305695")
+	)
+	(junction
+		(at 267.97 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc7496af-81af-4bb5-8f4a-b47de547e3ea")
 	)
 	(junction
 		(at 137.16 52.07)
@@ -2067,16 +1933,6 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 127) (xy 246.38 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18fcc28e-835c-4cd8-ac89-7553e4666383")
-	)
-	(wire
-		(pts
 			(xy 106.68 144.78) (xy 106.68 147.32)
 		)
 		(stroke
@@ -2097,7 +1953,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 147.32) (xy 190.5 149.86)
+			(xy 195.58 140.97) (xy 195.58 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2137,7 +1993,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 137.16) (xy 218.44 139.7)
+			(xy 223.52 130.81) (xy 223.52 133.35)
 		)
 		(stroke
 			(width 0)
@@ -2147,7 +2003,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 137.16) (xy 190.5 139.7)
+			(xy 195.58 130.81) (xy 195.58 133.35)
 		)
 		(stroke
 			(width 0)
@@ -2164,6 +2020,16 @@
 			(type default)
 		)
 		(uuid "39a48cb7-3269-4ccb-bd1e-b5a5d4658830")
+	)
+	(wire
+		(pts
+			(xy 267.97 91.44) (xy 267.97 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39fd7ce4-5f9d-4975-b449-8481b86aa9c3")
 	)
 	(wire
 		(pts
@@ -2287,6 +2153,16 @@
 	)
 	(wire
 		(pts
+			(xy 255.27 78.74) (xy 267.97 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5691d7a9-efe0-465c-a419-60b0ae85bfe0")
+	)
+	(wire
+		(pts
 			(xy 74.93 157.48) (xy 85.09 157.48)
 		)
 		(stroke
@@ -2327,7 +2203,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 147.32) (xy 246.38 149.86)
+			(xy 251.46 140.97) (xy 251.46 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2367,7 +2243,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 147.32) (xy 218.44 149.86)
+			(xy 223.52 140.97) (xy 223.52 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2404,16 +2280,6 @@
 			(type default)
 		)
 		(uuid "6f8d3abe-6d8d-4694-9397-7dd7e74290a4")
-	)
-	(wire
-		(pts
-			(xy 190.5 127) (xy 190.5 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fe858dc-8853-4bc0-900b-f5c0810fe853")
 	)
 	(wire
 		(pts
@@ -2454,6 +2320,16 @@
 			(type default)
 		)
 		(uuid "80c71e9f-4b91-489f-9341-a3088d777749")
+	)
+	(wire
+		(pts
+			(xy 267.97 78.74) (xy 267.97 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87405f4e-f6a0-404d-9603-2e6f64594071")
 	)
 	(wire
 		(pts
@@ -2607,16 +2483,6 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 127) (xy 218.44 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8140dda-806d-47ca-8a99-6258de321551")
-	)
-	(wire
-		(pts
 			(xy 97.79 134.62) (xy 97.79 137.16)
 		)
 		(stroke
@@ -2624,6 +2490,16 @@
 			(type default)
 		)
 		(uuid "acdd4093-f959-4bd8-8e35-816b45c2c187")
+	)
+	(wire
+		(pts
+			(xy 267.97 93.98) (xy 267.97 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0712f01-6a64-4a3b-b65e-6650bc327cf2")
 	)
 	(wire
 		(pts
@@ -2647,7 +2523,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 137.16) (xy 246.38 139.7)
+			(xy 251.46 130.81) (xy 251.46 133.35)
 		)
 		(stroke
 			(width 0)
@@ -2777,6 +2653,16 @@
 	)
 	(wire
 		(pts
+			(xy 267.97 93.98) (xy 255.27 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf6c4573-b684-48ca-b7e8-4d4925225a9f")
+	)
+	(wire
+		(pts
 			(xy 137.16 39.37) (xy 137.16 41.91)
 		)
 		(stroke
@@ -2834,6 +2720,16 @@
 			(type default)
 		)
 		(uuid "ddeba7bf-4afb-46be-a6ac-f4517c7c6632")
+	)
+	(wire
+		(pts
+			(xy 255.27 93.98) (xy 255.27 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "deeb1224-82aa-493c-b644-78ebadaeef6a")
 	)
 	(wire
 		(pts
@@ -2987,6 +2883,16 @@
 	)
 	(wire
 		(pts
+			(xy 255.27 86.36) (xy 255.27 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9dbc6e3-dca7-47e1-b24c-e9555cef75de")
+	)
+	(wire
+		(pts
 			(xy 97.79 147.32) (xy 106.68 147.32)
 		)
 		(stroke
@@ -3017,6 +2923,16 @@
 	)
 	(wire
 		(pts
+			(xy 255.27 86.36) (xy 257.81 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd550588-3a57-4192-b033-953bd292187f")
+	)
+	(wire
+		(pts
 			(xy 74.93 132.08) (xy 74.93 147.32)
 		)
 		(stroke
@@ -3024,157 +2940,6 @@
 			(type default)
 		)
 		(uuid "fe7a2bbd-2b86-47ac-9947-4340b5f8421e")
-	)
-	(table
-		(column_count 2)
-		(border
-			(external yes)
-			(header yes)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-		)
-		(separators
-			(rows yes)
-			(cols yes)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-		)
-		(column_widths 11.43 11.43)
-		(row_heights 2.54 2.54 2.54 2.54)
-		(cells
-			(table_cell "SW_STATE"
-				(exclude_from_sim no)
-				(at 76.2 74.93 0)
-				(size 11.43 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-				(uuid "ce01684a-525c-4358-b591-f05a8a1c40cd")
-			)
-			(table_cell "OUTPUT"
-				(exclude_from_sim no)
-				(at 87.63 74.93 0)
-				(size 11.43 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-				(uuid "f36f9a7b-1c37-46be-836c-dcabfeaa30eb")
-			)
-			(table_cell "HIGH"
-				(exclude_from_sim no)
-				(at 76.2 77.47 0)
-				(size 11.43 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-				(uuid "4531ed8b-25a1-4508-8be0-37d4ab4e2051")
-			)
-			(table_cell "V_{bat}"
-				(exclude_from_sim no)
-				(at 87.63 77.47 0)
-				(size 11.43 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-				(uuid "9f271459-5d00-4361-92a1-b7ffe9cb9928")
-			)
-			(table_cell "LOW"
-				(exclude_from_sim no)
-				(at 76.2 80.01 0)
-				(size 11.43 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-				(uuid "05b920dc-a714-4637-8f94-f52c80b4ab62")
-			)
-			(table_cell "floating"
-				(exclude_from_sim no)
-				(at 87.63 80.01 0)
-				(size 11.43 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-				(uuid "eb1898f9-2bbd-4969-a9a1-9546374c0709")
-			)
-			(table_cell "FLOAT"
-				(exclude_from_sim no)
-				(at 76.2 82.55 0)
-				(size 11.43 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-				(uuid "38d04cae-c93a-4cdd-9767-9f8699927f8e")
-			)
-			(table_cell "floating"
-				(exclude_from_sim no)
-				(at 87.63 82.55 0)
-				(size 11.43 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-				(uuid "7793b8cc-868c-41fb-abe7-453f1d4335c1")
-			)
-		)
 	)
 	(table
 		(column_count 2)
@@ -3327,6 +3092,157 @@
 			)
 		)
 	)
+	(table
+		(column_count 2)
+		(border
+			(external yes)
+			(header yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(separators
+			(rows yes)
+			(cols yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(column_widths 11.43 11.43)
+		(row_heights 2.54 2.54 2.54 2.54)
+		(cells
+			(table_cell "SW_STATE"
+				(exclude_from_sim no)
+				(at 76.2 74.93 0)
+				(size 11.43 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(uuid "ce01684a-525c-4358-b591-f05a8a1c40cd")
+			)
+			(table_cell "OUTPUT"
+				(exclude_from_sim no)
+				(at 87.63 74.93 0)
+				(size 11.43 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(uuid "f36f9a7b-1c37-46be-836c-dcabfeaa30eb")
+			)
+			(table_cell "HIGH"
+				(exclude_from_sim no)
+				(at 76.2 77.47 0)
+				(size 11.43 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(uuid "4531ed8b-25a1-4508-8be0-37d4ab4e2051")
+			)
+			(table_cell "V_{bat}"
+				(exclude_from_sim no)
+				(at 87.63 77.47 0)
+				(size 11.43 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(uuid "9f271459-5d00-4361-92a1-b7ffe9cb9928")
+			)
+			(table_cell "LOW"
+				(exclude_from_sim no)
+				(at 76.2 80.01 0)
+				(size 11.43 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(uuid "05b920dc-a714-4637-8f94-f52c80b4ab62")
+			)
+			(table_cell "floating"
+				(exclude_from_sim no)
+				(at 87.63 80.01 0)
+				(size 11.43 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(uuid "eb1898f9-2bbd-4969-a9a1-9546374c0709")
+			)
+			(table_cell "FLOAT"
+				(exclude_from_sim no)
+				(at 76.2 82.55 0)
+				(size 11.43 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(uuid "38d04cae-c93a-4cdd-9767-9f8699927f8e")
+			)
+			(table_cell "floating"
+				(exclude_from_sim no)
+				(at 87.63 82.55 0)
+				(size 11.43 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(uuid "7793b8cc-868c-41fb-abe7-453f1d4335c1")
+			)
+		)
+	)
 	(hierarchical_label "SW_VBATOUT_3"
 		(shape input)
 		(at 201.93 69.85 180)
@@ -3381,7 +3297,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "055f8e57-180d-4fb2-906d-3abd33498aa8")
-		(property "Reference" "R20"
+		(property "Reference" "R17"
 			(at 45.72 158.75 90)
 			(effects
 				(font
@@ -3397,7 +3313,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 45.72 166.878 90)
 			(effects
 				(font
@@ -3433,7 +3349,77 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "R20")
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener")
+		(at 146.05 45.72 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1426f91e-3591-4628-ad02-b78167f4b1fa")
+		(property "Reference" "D3"
+			(at 148.59 44.4499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D_Zener"
+			(at 148.59 46.9899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 146.05 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 146.05 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b340d53b-4b65-4421-949f-d8a3de12ca2b")
+		)
+		(pin "2"
+			(uuid "f865c5b2-ad59-415e-a2ba-dd680fc70cce")
+		)
+		(instances
+			(project "EjectionBuddy"
+				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -3540,7 +3526,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "276051b7-31d7-407f-8f1b-6a72411e3edb")
-		(property "Reference" "R17"
+		(property "Reference" "R14"
 			(at 100.33 139.6999 0)
 			(effects
 				(font
@@ -3549,7 +3535,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "15k"
 			(at 100.33 142.2399 0)
 			(effects
 				(font
@@ -3558,7 +3544,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 96.012 140.97 90)
 			(effects
 				(font
@@ -3594,7 +3580,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "R17")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -3610,7 +3596,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "281df4cc-18f9-4aad-b977-ae785231355f")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR041"
 			(at 99.06 40.64 0)
 			(effects
 				(font
@@ -3660,7 +3646,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR049")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -3758,7 +3744,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b62a083-fcfa-4ae8-b6fb-bacab96a2426")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR064"
 			(at 52.07 184.15 0)
 			(effects
 				(font
@@ -3808,7 +3794,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR043")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -3824,7 +3810,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2dbf14ca-14a7-4373-9f90-34f43acb39f4")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR053"
 			(at 219.71 88.9 0)
 			(effects
 				(font
@@ -3874,7 +3860,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR035")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -3890,7 +3876,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2e51081f-5ea5-4b1e-a552-45291c91ebbd")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR043"
 			(at 162.56 40.64 0)
 			(effects
 				(font
@@ -3940,7 +3926,147 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR027")
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener")
+		(at 106.68 140.97 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "303f9f40-42d1-44b5-8c52-9e197cc9157d")
+		(property "Reference" "D8"
+			(at 109.22 139.6999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D_Zener"
+			(at 109.22 142.2399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 106.68 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 106.68 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7fcd50cb-133e-4011-8f8d-d35939a77d74")
+		)
+		(pin "2"
+			(uuid "c09f82ed-e3d2-4a8e-8a4c-dfeff856a3af")
+		)
+		(instances
+			(project "EjectionBuddy"
+				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener")
+		(at 228.6 45.72 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "307ed8b9-8677-4394-91f2-adfb68732ad0")
+		(property "Reference" "D4"
+			(at 231.14 44.4499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D_Zener"
+			(at 231.14 46.9899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 228.6 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 228.6 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d5f5ac8f-993d-4474-b6c7-7b6f4076446b")
+		)
+		(pin "2"
+			(uuid "5fd90160-d78c-4cd4-ba51-1215ae4931ee")
+		)
+		(instances
+			(project "EjectionBuddy"
+				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -3948,7 +4074,7 @@
 	)
 	(symbol
 		(lib_id "power:+5C")
-		(at 190.5 127 0)
+		(at 195.58 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3956,8 +4082,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30cf31be-9d58-4069-ba30-42467aa55a84")
-		(property "Reference" "#PWR0104"
-			(at 190.5 130.81 0)
+		(property "Reference" "#PWR054"
+			(at 195.58 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3966,7 +4092,7 @@
 			)
 		)
 		(property "Value" "SVO1"
-			(at 190.5 121.92 0)
+			(at 195.58 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3974,7 +4100,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 127 0)
+			(at 195.58 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3983,7 +4109,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 127 0)
+			(at 195.58 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3992,7 +4118,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5C\""
-			(at 190.5 127 0)
+			(at 195.58 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4006,77 +4132,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR0104")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 218.44 133.35 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "30d94cf4-298b-4e91-8282-fd510b48d8a0")
-		(property "Reference" "JP3"
-			(at 220.98 132.0799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 220.98 134.6199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 218.44 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 218.44 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 218.44 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "000698b3-3d68-49af-b98c-f8ae432932b1")
-		)
-		(pin "2"
-			(uuid "c62c379d-71ca-4802-bebe-eba111345bdf")
-		)
-		(instances
-			(project "EjectionBuddy"
-				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "JP3")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -4183,7 +4239,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "383c33b0-716c-42ad-a960-0bb596d47987")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR046"
 			(at 245.11 40.64 0)
 			(effects
 				(font
@@ -4233,7 +4289,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR029")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -4249,7 +4305,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38b51078-aa9a-4771-a208-a2b371d04c80")
-		(property "Reference" "R18"
+		(property "Reference" "R16"
 			(at 100.33 152.3999 0)
 			(effects
 				(font
@@ -4258,7 +4314,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "15k"
 			(at 100.33 154.9399 0)
 			(effects
 				(font
@@ -4267,7 +4323,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 96.012 153.67 90)
 			(effects
 				(font
@@ -4303,7 +4359,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "R18")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -4319,7 +4375,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3961e3d7-57e1-431e-8f9d-ee57d6ea1e21")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR040"
 			(at 81.28 40.64 0)
 			(effects
 				(font
@@ -4369,7 +4425,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR025")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -4385,7 +4441,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41f8be81-eea5-4041-a514-1f8474e7fcd6")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR066"
 			(at 74.93 184.15 0)
 			(effects
 				(font
@@ -4435,7 +4491,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR041")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -4542,7 +4598,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4d7046a4-b8c0-4f2b-bbf2-363c687ae4d7")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR045"
 			(at 219.71 40.64 0)
 			(effects
 				(font
@@ -4592,7 +4648,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR028")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -4600,7 +4656,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4007")
-		(at 218.44 143.51 270)
+		(at 223.52 137.16 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4608,8 +4664,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e413a7f-2751-4aa9-869e-f8eb1e9a6f28")
-		(property "Reference" "D7"
-			(at 220.98 142.2399 90)
+		(property "Reference" "D6"
+			(at 226.06 135.8899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4618,7 +4674,7 @@
 			)
 		)
 		(property "Value" "1N4007"
-			(at 220.98 144.7799 90)
+			(at 226.06 138.4299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4627,7 +4683,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:Nexperia_CFP3_SOD-123W"
-			(at 213.995 143.51 0)
+			(at 219.075 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4636,7 +4692,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-			(at 218.44 143.51 0)
+			(at 223.52 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4645,7 +4701,7 @@
 			)
 		)
 		(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
-			(at 218.44 143.51 0)
+			(at 223.52 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4654,7 +4710,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 218.44 143.51 0)
+			(at 223.52 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4663,7 +4719,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 218.44 143.51 0)
+			(at 223.52 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4680,7 +4736,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "D7")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -4696,7 +4752,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "561966f2-cd07-4881-bc30-da50648319cc")
-		(property "Reference" "C8"
+		(property "Reference" "C14"
 			(at 55.88 170.1799 0)
 			(effects
 				(font
@@ -4714,7 +4770,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 53.0352 175.26 0)
 			(effects
 				(font
@@ -4750,8 +4806,90 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "C8")
+					(reference "C14")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:UMH3N")
+		(at 262.89 86.36 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5c16e207-b577-4919-8f7a-e8f285cca352")
+		(property "Reference" "Q4"
+			(at 270.51 85.0899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "UMH3N"
+			(at 270.51 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+			(at 263.017 97.536 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://rohmfs.rohm.com/en/products/databook/datasheet/discrete/transistor/digital/emh3t2r-e.pdf"
+			(at 266.7 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 50V Vce, Dual NPN Input Resistor Transistors, SOT-363"
+			(at 262.89 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "aaf7e1ce-7860-42d3-a2d7-04372be39423")
+		)
+		(pin "5"
+			(uuid "ce22eac2-e8f0-4f2e-99b5-e6edf80fe15a")
+		)
+		(pin "3"
+			(uuid "c2831270-c2d2-4cba-acba-b34cc632d3e9")
+		)
+		(pin "4"
+			(uuid "284fdfb7-4213-4dbc-a706-4ca4ae1edb59")
+		)
+		(pin "2"
+			(uuid "186b9743-34f6-4412-93eb-ae2aede2c999")
+		)
+		(pin "1"
+			(uuid "2be7112e-4958-4a2b-bd1e-5a6d24b1a604")
+		)
+		(instances
+			(project "EjectionBuddy"
+				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
+					(reference "Q4")
+					(unit 2)
 				)
 			)
 		)
@@ -4833,7 +4971,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5cddb84a-483e-42e2-ac83-f9517c379fb2")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR057"
 			(at 74.93 135.89 0)
 			(effects
 				(font
@@ -4883,7 +5021,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR042")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -4899,7 +5037,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "672cb217-b99d-4bb0-b8a7-2081c54e7702")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR048"
 			(at 43.18 88.9 0)
 			(effects
 				(font
@@ -4949,7 +5087,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR030")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -5014,13 +5152,13 @@
 			(uuid "936eb731-4cb1-4982-b76f-626b688f612f")
 		)
 		(pin "5"
-			(uuid "ce22eac2-e8f0-4f2e-99b5-e6edf80fe15a")
+			(uuid "ce22eac2-e8f0-4f2e-99b5-e6edf80fe15b")
 		)
 		(pin "3"
-			(uuid "c2831270-c2d2-4cba-acba-b34cc632d3e9")
+			(uuid "c2831270-c2d2-4cba-acba-b34cc632d3ea")
 		)
 		(pin "4"
-			(uuid "284fdfb7-4213-4dbc-a706-4ca4ae1edb59")
+			(uuid "284fdfb7-4213-4dbc-a706-4ca4ae1edb5a")
 		)
 		(pin "2"
 			(uuid "f8961605-4227-46c7-a184-425eb3c1e373")
@@ -5047,7 +5185,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69cbfb61-48af-4889-9757-ca2f9a7308d3")
-		(property "Reference" "R11"
+		(property "Reference" "R9"
 			(at 139.7 57.1499 0)
 			(effects
 				(font
@@ -5056,7 +5194,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "15k"
 			(at 139.7 59.6899 0)
 			(effects
 				(font
@@ -5065,7 +5203,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 135.382 58.42 90)
 			(effects
 				(font
@@ -5101,7 +5239,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "R11")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -5109,7 +5247,7 @@
 	)
 	(symbol
 		(lib_id "power:+5C")
-		(at 218.44 127 0)
+		(at 223.52 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5117,8 +5255,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6ca25755-6436-4054-b9e6-2f9571001642")
-		(property "Reference" "#PWR0105"
-			(at 218.44 130.81 0)
+		(property "Reference" "#PWR055"
+			(at 223.52 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5127,7 +5265,7 @@
 			)
 		)
 		(property "Value" "SVO2"
-			(at 218.44 121.92 0)
+			(at 223.52 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5135,7 +5273,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 218.44 127 0)
+			(at 223.52 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5144,7 +5282,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 218.44 127 0)
+			(at 223.52 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5153,7 +5291,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5C\""
-			(at 218.44 127 0)
+			(at 223.52 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5167,7 +5305,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR0105")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -5249,7 +5387,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6f6bd23b-9b5c-49b3-b8c8-61e944565129")
-		(property "Reference" "#FLG05"
+		(property "Reference" "#FLG09"
 			(at 142.875 134.62 0)
 			(effects
 				(font
@@ -5300,7 +5438,7 @@
 		(instances
 			(project ""
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#FLG05")
+					(reference "#FLG09")
 					(unit 1)
 				)
 			)
@@ -5316,7 +5454,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77452e42-4280-414a-b230-02307b67e296")
-		(property "Reference" "R9"
+		(property "Reference" "R7"
 			(at 222.25 44.4499 0)
 			(effects
 				(font
@@ -5325,7 +5463,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "15k"
 			(at 222.25 46.9899 0)
 			(effects
 				(font
@@ -5334,7 +5472,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 217.932 45.72 90)
 			(effects
 				(font
@@ -5370,7 +5508,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "R9")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -5468,7 +5606,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7d1a4568-b283-4ddf-bdd3-8bc852ba70b0")
-		(property "Reference" "R14"
+		(property "Reference" "R12"
 			(at 127 74.9299 0)
 			(effects
 				(font
@@ -5486,7 +5624,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 122.682 76.2 90)
 			(effects
 				(font
@@ -5522,7 +5660,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "R14")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -5596,76 +5734,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 190.5 133.35 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8125b9aa-5636-40fc-a575-0bc0d87a26c6")
-		(property "Reference" "JP2"
-			(at 193.04 132.0799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 193.04 134.6199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 190.5 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 190.5 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 190.5 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8a428df6-1d25-4868-bf91-559ebf61530a")
-		)
-		(pin "2"
-			(uuid "1bd3d5fa-c94f-46ab-aa93-1e69ae5a287f")
-		)
-		(instances
-			(project "EjectionBuddy"
-				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "JP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 55.88 58.42 0)
 		(unit 1)
@@ -5675,7 +5743,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "862a0e69-ce88-4555-bb40-8c37cfaafd87")
-		(property "Reference" "R10"
+		(property "Reference" "R8"
 			(at 58.42 57.1499 0)
 			(effects
 				(font
@@ -5684,7 +5752,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "15k"
 			(at 58.42 59.6899 0)
 			(effects
 				(font
@@ -5693,7 +5761,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 54.102 58.42 90)
 			(effects
 				(font
@@ -5729,7 +5797,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "R10")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -5745,7 +5813,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "875b9280-36be-4d21-bb22-8f30b638e581")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR059"
 			(at 123.19 135.89 0)
 			(effects
 				(font
@@ -5795,7 +5863,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR037")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -5811,7 +5879,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "889e6d9d-176d-4948-a2e3-2e6d9db0d27f")
-		(property "Reference" "R7"
+		(property "Reference" "R5"
 			(at 58.42 44.4499 0)
 			(effects
 				(font
@@ -5820,7 +5888,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "15k"
 			(at 58.42 46.9899 0)
 			(effects
 				(font
@@ -5829,7 +5897,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 54.102 45.72 90)
 			(effects
 				(font
@@ -5865,77 +5933,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Zener")
-		(at 106.68 140.97 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "88b02ac1-ac98-4f0c-83ec-2b6a575480b1")
-		(property "Reference" "D5"
-			(at 109.22 139.6999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "D_Zener"
-			(at 109.22 142.2399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 106.68 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 106.68 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Zener diode"
-			(at 106.68 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6ec2b8d7-5905-43c1-b290-e78abd8392ad")
-		)
-		(pin "2"
-			(uuid "cadceb38-4248-4fd6-9e9f-ab30d6c19dc4")
-		)
-		(instances
-			(project "EjectionBuddy"
-				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "D5")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -5951,7 +5949,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9156e5ed-71a4-4f80-9ac5-34ac5dcd3ed4")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR058"
 			(at 97.79 135.89 0)
 			(effects
 				(font
@@ -6001,7 +5999,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR036")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -6017,7 +6015,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94ed6545-179b-441b-aabe-206812fc7b52")
-		(property "Reference" "R15"
+		(property "Reference" "R13"
 			(at 209.55 74.9299 0)
 			(effects
 				(font
@@ -6035,7 +6033,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 205.232 76.2 90)
 			(effects
 				(font
@@ -6071,7 +6069,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "R15")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -6087,7 +6085,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b44243b-c682-4e87-ba14-30ebb0f0ff7e")
-		(property "Reference" "R16"
+		(property "Reference" "R18"
 			(at 64.77 170.1799 0)
 			(effects
 				(font
@@ -6105,7 +6103,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 60.452 171.45 90)
 			(effects
 				(font
@@ -6141,7 +6139,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "R16")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -6157,7 +6155,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9d523516-af6e-4733-a26c-5dcbad9c7c3e")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR042"
 			(at 137.16 40.64 0)
 			(effects
 				(font
@@ -6207,7 +6205,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR026")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -6215,7 +6213,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 190.5 149.86 0)
+		(at 195.58 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6223,8 +6221,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a384e74c-e9bc-491a-9752-2f56958a06bc")
-		(property "Reference" "#PWR0103"
-			(at 190.5 156.21 0)
+		(property "Reference" "#PWR061"
+			(at 195.58 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6233,7 +6231,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 190.5 154.94 0)
+			(at 195.58 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6241,7 +6239,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 149.86 0)
+			(at 195.58 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6250,7 +6248,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 149.86 0)
+			(at 195.58 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6259,7 +6257,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 190.5 149.86 0)
+			(at 195.58 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6273,7 +6271,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR0103")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -6289,7 +6287,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6050665-febc-4374-8292-8dce853e86cd")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR051"
 			(at 137.16 88.9 0)
 			(effects
 				(font
@@ -6339,7 +6337,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR033")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -6355,7 +6353,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6751f8b-9f61-48af-9c96-b64283cd686c")
-		(property "Reference" "R19"
+		(property "Reference" "R15"
 			(at 77.47 149.8599 0)
 			(effects
 				(font
@@ -6364,7 +6362,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "15k"
 			(at 77.47 152.3999 0)
 			(effects
 				(font
@@ -6373,7 +6371,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 73.152 151.13 90)
 			(effects
 				(font
@@ -6409,7 +6407,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "R19")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -6425,7 +6423,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6b5cbe4-99d6-44f4-868b-31e79e260c9e")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR065"
 			(at 62.23 184.15 0)
 			(effects
 				(font
@@ -6475,7 +6473,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR039")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -6491,7 +6489,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab794f7c-1647-43b4-8d19-81e2c6e7da67")
-		(property "Reference" "R8"
+		(property "Reference" "R6"
 			(at 139.7 44.4499 0)
 			(effects
 				(font
@@ -6500,7 +6498,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "15k"
 			(at 139.7 46.9899 0)
 			(effects
 				(font
@@ -6509,7 +6507,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 135.382 45.72 90)
 			(effects
 				(font
@@ -6545,77 +6543,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Zener")
-		(at 228.6 45.72 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ac268927-86bc-4375-948e-fc3f92a28666")
-		(property "Reference" "D4"
-			(at 231.14 44.4499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "D_Zener"
-			(at 231.14 46.9899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 228.6 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 228.6 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Zener diode"
-			(at 228.6 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "25b8567e-576a-4e2a-979d-923cac577560")
-		)
-		(pin "2"
-			(uuid "85c5d762-153e-4a31-9a69-e2940d5c9436")
-		)
-		(instances
-			(project "EjectionBuddy"
-				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "D4")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -6623,7 +6551,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4007")
-		(at 190.5 143.51 270)
+		(at 195.58 137.16 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6631,8 +6559,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b700cb36-9a99-42c6-838b-0e6a59e8d53c")
-		(property "Reference" "D6"
-			(at 193.04 142.2399 90)
+		(property "Reference" "D5"
+			(at 198.12 135.8899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6641,7 +6569,7 @@
 			)
 		)
 		(property "Value" "1N4007"
-			(at 193.04 144.7799 90)
+			(at 198.12 138.4299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6650,7 +6578,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:Nexperia_CFP3_SOD-123W"
-			(at 186.055 143.51 0)
+			(at 191.135 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6659,7 +6587,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-			(at 190.5 143.51 0)
+			(at 195.58 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6668,7 +6596,7 @@
 			)
 		)
 		(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
-			(at 190.5 143.51 0)
+			(at 195.58 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6677,7 +6605,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 190.5 143.51 0)
+			(at 195.58 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6686,7 +6614,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 190.5 143.51 0)
+			(at 195.58 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6703,7 +6631,7 @@
 		(instances
 			(project ""
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "D6")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -6711,7 +6639,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4007")
-		(at 246.38 143.51 270)
+		(at 251.46 137.16 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6719,8 +6647,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7fae778-96b6-45e7-8634-15d84755ff3f")
-		(property "Reference" "D8"
-			(at 248.92 142.2399 90)
+		(property "Reference" "D7"
+			(at 254 135.8899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6729,7 +6657,7 @@
 			)
 		)
 		(property "Value" "1N4007"
-			(at 248.92 144.7799 90)
+			(at 254 138.4299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6738,7 +6666,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:Nexperia_CFP3_SOD-123W"
-			(at 241.935 143.51 0)
+			(at 247.015 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6747,7 +6675,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-			(at 246.38 143.51 0)
+			(at 251.46 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6756,7 +6684,7 @@
 			)
 		)
 		(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
-			(at 246.38 143.51 0)
+			(at 251.46 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6765,7 +6693,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 246.38 143.51 0)
+			(at 251.46 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6774,7 +6702,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 246.38 143.51 0)
+			(at 251.46 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6791,7 +6719,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "D8")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -6807,7 +6735,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b95e1a68-bb5b-4f10-bb36-ffe194dbcd63")
-		(property "Reference" "R12"
+		(property "Reference" "R10"
 			(at 222.25 57.1499 0)
 			(effects
 				(font
@@ -6816,7 +6744,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "15k"
 			(at 222.25 59.6899 0)
 			(effects
 				(font
@@ -6825,7 +6753,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 217.932 58.42 90)
 			(effects
 				(font
@@ -6861,7 +6789,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "R12")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -6877,7 +6805,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bd48ba01-55fc-41f0-889d-1ce4a0700e32")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR044"
 			(at 180.34 40.64 0)
 			(effects
 				(font
@@ -6927,7 +6855,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR048")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -6943,7 +6871,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c55fe2c7-de36-4d88-8954-a1def37cf968")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR060"
 			(at 140.97 135.89 0)
 			(effects
 				(font
@@ -6993,7 +6921,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR038")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -7058,13 +6986,13 @@
 			(uuid "05fe71ae-cf54-4d78-a930-c96492fe0d16")
 		)
 		(pin "5"
-			(uuid "ce22eac2-e8f0-4f2e-99b5-e6edf80fe15b")
+			(uuid "ce22eac2-e8f0-4f2e-99b5-e6edf80fe15c")
 		)
 		(pin "3"
-			(uuid "c2831270-c2d2-4cba-acba-b34cc632d3ea")
+			(uuid "c2831270-c2d2-4cba-acba-b34cc632d3eb")
 		)
 		(pin "4"
-			(uuid "284fdfb7-4213-4dbc-a706-4ca4ae1edb5a")
+			(uuid "284fdfb7-4213-4dbc-a706-4ca4ae1edb5b")
 		)
 		(pin "2"
 			(uuid "bcd02c23-a8ee-461f-943b-baf4c919b583")
@@ -7091,7 +7019,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8e377e9-4f81-4017-b8d9-f23db6ab6ab9")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR049"
 			(at 55.88 88.9 0)
 			(effects
 				(font
@@ -7141,77 +7069,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR031")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Zener")
-		(at 146.05 45.72 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cd303439-ca5d-41e5-b9d2-924795f5b050")
-		(property "Reference" "D3"
-			(at 148.59 44.4499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "D_Zener"
-			(at 148.59 46.9899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 146.05 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 146.05 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Zener diode"
-			(at 146.05 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6283f7f2-f778-4618-894e-d36953e78c43")
-		)
-		(pin "2"
-			(uuid "de577a5d-55b3-4861-9fc1-fab1331548b3")
-		)
-		(instances
-			(project "EjectionBuddy"
-				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "D3")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -7227,7 +7085,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cdf0efad-d935-4d43-afe8-604a60e93179")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR050"
 			(at 124.46 88.9 0)
 			(effects
 				(font
@@ -7277,7 +7135,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR032")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -7360,7 +7218,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d297f349-3646-44c9-8645-d4e3cd556452")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR067"
 			(at 97.79 184.15 0)
 			(effects
 				(font
@@ -7410,7 +7268,73 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR040")
+					(reference "#PWR067")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 267.97 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d8fd3fe2-4367-41cf-9c36-c30635074d2f")
+		(property "Reference" "#PWR0139"
+			(at 267.97 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 267.97 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 267.97 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 267.97 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c0b12779-8504-42d4-bfa2-e37a0778687e")
+		)
+		(instances
+			(project "EjectionBuddy"
+				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
+					(reference "#PWR0139")
 					(unit 1)
 				)
 			)
@@ -7526,7 +7450,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-523"
 			(at 64.77 45.72 0)
 			(effects
 				(font
@@ -7570,7 +7494,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 246.38 149.86 0)
+		(at 251.46 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7578,8 +7502,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e41a87cb-ad7a-4188-b23a-a1e798cd101c")
-		(property "Reference" "#PWR0108"
-			(at 246.38 156.21 0)
+		(property "Reference" "#PWR063"
+			(at 251.46 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7588,7 +7512,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 246.38 154.94 0)
+			(at 251.46 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7596,7 +7520,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 149.86 0)
+			(at 251.46 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7605,7 +7529,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 149.86 0)
+			(at 251.46 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7614,7 +7538,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 246.38 149.86 0)
+			(at 251.46 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7628,7 +7552,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR0108")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -7644,7 +7568,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e6f21198-e354-49c0-9fcc-33ee2f54a092")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR052"
 			(at 207.01 88.9 0)
 			(effects
 				(font
@@ -7694,7 +7618,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR034")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -7702,7 +7626,7 @@
 	)
 	(symbol
 		(lib_id "power:+5C")
-		(at 246.38 127 0)
+		(at 251.46 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7710,8 +7634,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7037747-759c-4927-bec5-31dbd3393637")
-		(property "Reference" "#PWR0107"
-			(at 246.38 130.81 0)
+		(property "Reference" "#PWR056"
+			(at 251.46 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7720,7 +7644,7 @@
 			)
 		)
 		(property "Value" "SVO3"
-			(at 246.38 121.92 0)
+			(at 251.46 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7728,7 +7652,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 127 0)
+			(at 251.46 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7737,7 +7661,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 127 0)
+			(at 251.46 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7746,7 +7670,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5C\""
-			(at 246.38 127 0)
+			(at 251.46 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7760,7 +7684,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR0107")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -7776,7 +7700,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e85841a6-ab5e-4a2b-bfd1-18b5431e28f2")
-		(property "Reference" "R13"
+		(property "Reference" "R11"
 			(at 45.72 74.9299 0)
 			(effects
 				(font
@@ -7794,7 +7718,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 41.402 76.2 90)
 			(effects
 				(font
@@ -7830,7 +7754,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "R13")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -7846,7 +7770,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ea1f6997-8bde-43df-8e93-43bcd6c29a24")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR039"
 			(at 55.88 40.64 0)
 			(effects
 				(font
@@ -7896,7 +7820,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR024")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -7904,7 +7828,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 218.44 149.86 0)
+		(at 223.52 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7912,8 +7836,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2b2eb03-98ed-45db-8673-4b3e01d9657b")
-		(property "Reference" "#PWR0106"
-			(at 218.44 156.21 0)
+		(property "Reference" "#PWR062"
+			(at 223.52 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7922,7 +7846,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 218.44 154.94 0)
+			(at 223.52 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7930,7 +7854,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 218.44 149.86 0)
+			(at 223.52 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7939,7 +7863,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 218.44 149.86 0)
+			(at 223.52 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7948,7 +7872,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 218.44 149.86 0)
+			(at 223.52 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7962,7 +7886,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "#PWR0106")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -8055,76 +7979,6 @@
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
 					(reference "Q2")
 					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 246.38 133.35 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fe4db34f-d5e1-4e8d-abb8-410a0273178d")
-		(property "Reference" "JP4"
-			(at 248.92 132.0799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 248.92 134.6199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 246.38 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 246.38 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 246.38 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3254b82d-faa5-4d36-9dbf-804c88d29f01")
-		)
-		(pin "2"
-			(uuid "6fb8b2d7-5103-4116-bde0-6c3b122ffe5b")
-		)
-		(instances
-			(project "EjectionBuddy"
-				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/57fa12f4-1b52-4873-a6ec-aeecc93bf92b"
-					(reference "JP4")
-					(unit 1)
 				)
 			)
 		)

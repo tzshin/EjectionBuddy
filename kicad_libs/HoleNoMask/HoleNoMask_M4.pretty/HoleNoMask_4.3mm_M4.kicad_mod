@@ -1,0 +1,88 @@
+(footprint "HoleNoMask_4.3mm_M4"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Mounting Hole 4.3mm, M4")
+	(tags "mounting hole 4.3mm m4")
+	(property "Reference" "REF**"
+		(at 0 -5.3 0)
+		(layer "F.SilkS")
+		(uuid "4fb94c5c-530d-4320-ae2a-569242755f4f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "HoleNoMask_4.3mm_M4"
+		(at 0 5.3 0)
+		(layer "F.Fab")
+		(uuid "520dfed7-6c6c-44b2-8845-14ee8f5376ec")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "79a91cb7-4fed-4fe9-b3be-95cf89ada5a7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3325e402-be64-4a8a-9030-3a40a9cfd4e6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(fp_circle
+		(center 0 0)
+		(end 3.8 0)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "d951fa7f-a293-49a6-9c4a-10b57998ca7f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "3330080c-5557-4650-b99f-16437cdcd6a0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 7.5 7.5)
+		(drill 4.3)
+		(layers "*.Mask")
+		(clearance 1.8)
+		(uuid "bea6a8c8-acd0-4f3e-8253-35af812436d9")
+	)
+	(embedded_fonts no)
+)

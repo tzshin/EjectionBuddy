@@ -1,0 +1,201 @@
+(footprint "HoleNoMask_4.3mm_M4x2_Diag2.5mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Mounting Hole 4.3mm, M4")
+	(tags "mounting hole 4.3mm m4")
+	(property "Reference" "REF**"
+		(at 1.1 -6.6 0)
+		(layer "F.SilkS")
+		(uuid "19321c4e-822d-462c-b2d6-88002d1f4ee3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "HoleNoMask_4.3mm_M4x2_Diag2.5mm"
+		(at 1.1 4 0)
+		(layer "F.Fab")
+		(uuid "57a55bb6-7062-4137-94a9-604c1d0244b4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 1.1 -1.3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9b717481-ebba-40bb-bda3-3e43ae32a91d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 1.1 -1.3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5dadf624-5b4a-4c96-aaff-7d2b1be47984")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(fp_circle
+		(center 0 0)
+		(end 3.575 0)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "B.Mask")
+		(uuid "4e358858-f89d-463f-8c26-01a01c6a6b40")
+	)
+	(fp_circle
+		(center 2.5 -2.5)
+		(end 6.075 -2.5)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "B.Mask")
+		(uuid "fc0d1cf1-eed9-4df7-8451-7cb4294ac49a")
+	)
+	(fp_line
+		(start -2.5 0)
+		(end -3.32 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "eea5efd0-7611-4de3-9628-e3d1b48b71dd")
+	)
+	(fp_line
+		(start 0 2.5)
+		(end 0 3.32)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0e65bd51-c331-4885-8977-f7f3bc8fa1b4")
+	)
+	(fp_line
+		(start 0 -2.15)
+		(end 0.35 -2.15)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "43ff8327-dbc8-43e3-8ea6-05b167648bd8")
+	)
+	(fp_line
+		(start 0.35 -2.499999)
+		(end 0.35 -2.15)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "93396c9c-40a0-4b53-8d17-25a78ee86699")
+	)
+	(fp_line
+		(start 2.15 -0.35)
+		(end 2.15 0)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "31fa7ed8-af62-4ccb-b780-b002b34e633a")
+	)
+	(fp_line
+		(start 2.5 -0.35)
+		(end 2.15 -0.35)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "c6b7f35d-774c-48a7-b7eb-2104215e6cf3")
+	)
+	(fp_arc
+		(start 0.35 -2.5)
+		(mid 4.02028 -4.02028)
+		(end 2.5 -0.35)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "963fdddd-65a1-4dab-aa7c-70785a1283ca")
+	)
+	(fp_arc
+		(start 2.15 0)
+		(mid -1.52028 1.52028)
+		(end 0 -2.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "225c83bc-54d4-497c-9fda-826b67a4a7eb")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 1.1 -1.3 0)
+		(layer "F.Fab")
+		(uuid "3330080c-5557-4650-b99f-16437cdcd6a0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole custom
+		(at 2.5 -2.5)
+		(size 4.25 4.25)
+		(drill 4.25)
+		(layers "F&B.Cu" "*.Mask")
+		(solder_mask_margin 1.45)
+		(clearance 1.65)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_circle
+				(center -2.5 2.5)
+				(end -0.375 2.5)
+				(width 0)
+				(fill yes)
+			)
+			(gr_poly
+				(pts
+					(xy -2.125 0) (xy -2.125 0.375) (xy -2.5 0.375) (xy -0.375 2.5) (xy -0.375 2.125) (xy 0 2.125)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "2dd14db1-9a62-4895-8345-d89164253a3d")
+	)
+	(embedded_fonts no)
+)
