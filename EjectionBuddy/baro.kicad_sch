@@ -972,7 +972,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1eea92db-cafb-4ed8-b5f4-84e1f56ff27a")
-		(property "Reference" "C36"
+		(property "Reference" "C26"
 			(at 83.82 40.6399 0)
 			(effects
 				(font
@@ -1026,7 +1026,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/cbdf36e0-fe80-492b-aa20-c811f119c320"
-					(reference "C36")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -1042,7 +1042,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c316c67-f935-4312-abac-718209595deb")
-		(property "Reference" "#PWR0140"
+		(property "Reference" "#PWR0143"
 			(at 58.42 74.93 0)
 			(effects
 				(font
@@ -1092,7 +1092,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/cbdf36e0-fe80-492b-aa20-c811f119c320"
-					(reference "#PWR0140")
+					(reference "#PWR0143")
 					(unit 1)
 				)
 			)
@@ -1108,7 +1108,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f434602-2488-4f57-9c20-669f82f3cf12")
-		(property "Reference" "#PWR0142"
+		(property "Reference" "#PWR0140"
 			(at 72.39 39.37 0)
 			(effects
 				(font
@@ -1158,7 +1158,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/cbdf36e0-fe80-492b-aa20-c811f119c320"
-					(reference "#PWR0142")
+					(reference "#PWR0140")
 					(unit 1)
 				)
 			)
@@ -1174,7 +1174,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f5170ef-1f4a-4980-bc51-8c0086f2cfd5")
-		(property "Reference" "#PWR0141"
+		(property "Reference" "#PWR0144"
 			(at 69.85 74.93 0)
 			(effects
 				(font
@@ -1224,7 +1224,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/cbdf36e0-fe80-492b-aa20-c811f119c320"
-					(reference "#PWR0141")
+					(reference "#PWR0144")
 					(unit 1)
 				)
 			)
@@ -1328,7 +1328,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b2845958-dfa3-473f-a721-8dc7efccd9a7")
-		(property "Reference" "#PWR0143"
+		(property "Reference" "#PWR0141"
 			(at 80.01 53.34 0)
 			(effects
 				(font
@@ -1378,7 +1378,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/cbdf36e0-fe80-492b-aa20-c811f119c320"
-					(reference "#PWR0143")
+					(reference "#PWR0141")
 					(unit 1)
 				)
 			)
@@ -1394,7 +1394,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4a4b80e-ed57-4102-8d9e-573a7ac38bf7")
-		(property "Reference" "#PWR0144"
+		(property "Reference" "#PWR0142"
 			(at 92.71 53.34 0)
 			(effects
 				(font
@@ -1444,7 +1444,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/cbdf36e0-fe80-492b-aa20-c811f119c320"
-					(reference "#PWR0144")
+					(reference "#PWR0142")
 					(unit 1)
 				)
 			)
@@ -1460,7 +1460,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e3913f5f-dba7-4978-96af-e1ff3776a93d")
-		(property "Reference" "C37"
+		(property "Reference" "C27"
 			(at 96.52 40.6399 0)
 			(effects
 				(font
@@ -1514,7 +1514,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/cbdf36e0-fe80-492b-aa20-c811f119c320"
-					(reference "C37")
+					(reference "C27")
 					(unit 1)
 				)
 			)
