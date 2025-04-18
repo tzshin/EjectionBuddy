@@ -116,7 +116,7 @@
 		)
 		(uuid "42f2489d-09f6-4a27-b30f-35df143ecd50")
 	)
-	(text "v0.2"
+	(text "v0.2.1"
 		(exclude_from_sim no)
 		(at 268.478 193.294 0)
 		(effects
@@ -286,7 +286,7 @@
 		(uuid "3f25342e-8476-46de-b6f0-0d0b89817457")
 	)
 	(bus_entry
-		(at 147.32 176.53)
+		(at 147.32 177.8)
 		(size -2.54 -2.54)
 		(stroke
 			(width 0)
@@ -340,7 +340,7 @@
 		(uuid "8d2dcbb6-90aa-4209-a323-0b43a9ecdd54")
 	)
 	(bus_entry
-		(at 147.32 172.72)
+		(at 147.32 173.99)
 		(size -2.54 -2.54)
 		(stroke
 			(width 0)
@@ -551,7 +551,7 @@
 	)
 	(bus
 		(pts
-			(xy 147.32 173.99) (xy 149.86 173.99)
+			(xy 147.32 175.26) (xy 149.86 175.26)
 		)
 		(stroke
 			(width 0)
@@ -651,7 +651,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 170.18) (xy 144.78 170.18)
+			(xy 127 171.45) (xy 144.78 171.45)
 		)
 		(stroke
 			(width 0)
@@ -701,7 +701,7 @@
 	)
 	(bus
 		(pts
-			(xy 147.32 173.99) (xy 147.32 176.53)
+			(xy 147.32 175.26) (xy 147.32 177.8)
 		)
 		(stroke
 			(width 0)
@@ -741,7 +741,7 @@
 	)
 	(bus
 		(pts
-			(xy 147.32 170.18) (xy 147.32 172.72)
+			(xy 147.32 171.45) (xy 147.32 173.99)
 		)
 		(stroke
 			(width 0)
@@ -991,7 +991,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 173.99) (xy 144.78 173.99)
+			(xy 127 175.26) (xy 144.78 175.26)
 		)
 		(stroke
 			(width 0)
@@ -1101,7 +1101,7 @@
 	)
 	(bus
 		(pts
-			(xy 147.32 170.18) (xy 149.86 170.18)
+			(xy 147.32 171.45) (xy 149.86 171.45)
 		)
 		(stroke
 			(width 0)
@@ -1400,7 +1400,7 @@
 		(uuid "79a01e1f-4a26-4c1e-9499-200e4fd412bb")
 	)
 	(label "MM.GPIO42"
-		(at 132.08 170.18 0)
+		(at 132.08 171.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1570,7 +1570,7 @@
 		(uuid "bfb4214c-ae3a-4dd4-a083-0902b1b29c18")
 	)
 	(label "SM.TPIDATA"
-		(at 132.08 173.99 0)
+		(at 132.08 175.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1777,7 +1777,7 @@
 	)
 	(hierarchical_label "SM{TPI}"
 		(shape bidirectional)
-		(at 149.86 173.99 0)
+		(at 149.86 175.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1799,7 +1799,7 @@
 	)
 	(hierarchical_label "MM{GPIO[0..48]}"
 		(shape bidirectional)
-		(at 149.86 170.18 0)
+		(at 149.86 171.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2484,7 +2484,7 @@
 		)
 	)
 	(sheet
-		(at 107.95 166.37)
+		(at 107.95 167.64)
 		(size 19.05 16.51)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2500,7 +2500,7 @@
 		)
 		(uuid "afc20354-65d1-484b-a732-1fdaec85bf5e")
 		(property "Sheetname" "led"
-			(at 107.95 165.0234 0)
+			(at 107.95 166.2934 0)
 			(effects
 				(font
 					(size 2.54 2.54)
@@ -2509,7 +2509,7 @@
 			)
 		)
 		(property "Sheetfile" "led.kicad_sch"
-			(at 107.95 183.4646 0)
+			(at 107.95 184.7346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2518,7 +2518,7 @@
 			)
 		)
 		(pin "BLINK_MM" input
-			(at 127 170.18 0)
+			(at 127 171.45 0)
 			(uuid "e523af6c-0b9c-4acc-864b-a7adc174e1e2")
 			(effects
 				(font
@@ -2528,7 +2528,7 @@
 			)
 		)
 		(pin "BLINK_SM" input
-			(at 127 173.99 0)
+			(at 127 175.26 0)
 			(uuid "a4ebedac-41dc-4f66-b7a9-c14e75ee7b11")
 			(effects
 				(font

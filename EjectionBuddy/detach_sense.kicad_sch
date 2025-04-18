@@ -800,7 +800,7 @@
 	)
 	(rectangle
 		(start 15.24 15.24)
-		(end 137.16 99.06)
+		(end 137.16 110.49)
 		(stroke
 			(width 0)
 			(type default)
@@ -810,9 +810,9 @@
 		)
 		(uuid 059eaaa3-886e-4860-92a0-18bb1ea9bd22)
 	)
-	(text "V_{A} - V_{K} < 12V\nThis value is currently determined\nby the resistor's power rating (to\ndissipate the resistive loss)"
+	(text "V_{A} - V_{K} should < 12V\nThe upper limit is currently determined by the\npower rating of those current-limiting resistors\n(resistive loss dissipation)\n\nAs for the lower limit, delta-V above 3.3V should suffice"
 		(exclude_from_sim no)
-		(at 92.456 87.376 0)
+		(at 27.178 97.028 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1834,7 +1834,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a33ba92b-979b-43a1-a378-e8acf538d03d")
-		(property "Reference" "#PWR0132"
+		(property "Reference" "#PWR0133"
 			(at 80.01 86.36 0)
 			(effects
 				(font
@@ -1884,7 +1884,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/9490ce1c-6902-4b62-9fad-3e1d3d5b07c6"
-					(reference "#PWR0132")
+					(reference "#PWR0133")
 					(unit 1)
 				)
 			)
@@ -1968,7 +1968,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c93f7729-d15c-49e1-81c0-593786a551dc")
-		(property "Reference" "#PWR0131"
+		(property "Reference" "#PWR0132"
 			(at 106.68 66.04 0)
 			(effects
 				(font
@@ -2018,7 +2018,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/9490ce1c-6902-4b62-9fad-3e1d3d5b07c6"
-					(reference "#PWR0131")
+					(reference "#PWR0132")
 					(unit 1)
 				)
 			)
@@ -2034,7 +2034,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2d3ffd7-ae18-4016-895e-5514030343b3")
-		(property "Reference" "#PWR0129"
+		(property "Reference" "#PWR0130"
 			(at 85.09 36.83 0)
 			(effects
 				(font
@@ -2084,7 +2084,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/9490ce1c-6902-4b62-9fad-3e1d3d5b07c6"
-					(reference "#PWR0129")
+					(reference "#PWR0130")
 					(unit 1)
 				)
 			)
@@ -2100,7 +2100,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f8a95ca4-11b5-452e-995a-c9fc6ac04099")
-		(property "Reference" "#PWR0130"
+		(property "Reference" "#PWR0131"
 			(at 80.01 60.96 0)
 			(effects
 				(font
@@ -2150,7 +2150,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/9490ce1c-6902-4b62-9fad-3e1d3d5b07c6"
-					(reference "#PWR0130")
+					(reference "#PWR0131")
 					(unit 1)
 				)
 			)

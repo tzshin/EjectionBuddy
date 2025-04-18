@@ -908,7 +908,7 @@
 	)
 	(rectangle
 		(start 15.24 15.24)
-		(end 118.11 114.3)
+		(end 120.65 114.3)
 		(stroke
 			(width 0)
 			(type default)
@@ -942,12 +942,13 @@
 	)
 	(text "IMU"
 		(exclude_from_sim no)
-		(at 20.574 19.558 0)
+		(at 17.272 19.558 0)
 		(effects
 			(font
 				(size 2.54 2.54)
 				(thickness 0.3175)
 			)
+			(justify left)
 		)
 		(uuid "5735cf8b-aa54-4140-835d-5db1119d0845")
 	)
@@ -1325,7 +1326,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "07d0c1f0-810c-4095-bdab-f04bdcc92722")
-		(property "Reference" "#PWR0121"
+		(property "Reference" "#PWR0122"
 			(at 54.61 38.1 0)
 			(effects
 				(font
@@ -1375,7 +1376,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/fc114c64-d761-4020-b59c-5aa26268bf21"
-					(reference "#PWR0121")
+					(reference "#PWR0122")
 					(unit 1)
 				)
 			)
@@ -1460,7 +1461,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30e53f40-90fe-4958-b6fc-981e9912da0e")
-		(property "Reference" "#PWR0123"
+		(property "Reference" "#PWR0124"
 			(at 54.61 55.88 0)
 			(effects
 				(font
@@ -1510,7 +1511,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/fc114c64-d761-4020-b59c-5aa26268bf21"
-					(reference "#PWR0123")
+					(reference "#PWR0124")
 					(unit 1)
 				)
 			)
@@ -1526,7 +1527,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3618b81b-a069-459f-b7ff-505dcb9c1a37")
-		(property "Reference" "#PWR0126"
+		(property "Reference" "#PWR0127"
 			(at 45.72 99.06 0)
 			(effects
 				(font
@@ -1576,7 +1577,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/fc114c64-d761-4020-b59c-5aa26268bf21"
-					(reference "#PWR0126")
+					(reference "#PWR0127")
 					(unit 1)
 				)
 			)
@@ -1727,7 +1728,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4eec96bf-2686-49ae-893a-178b23a9d25d")
-		(property "Reference" "#PWR0125"
+		(property "Reference" "#PWR0126"
 			(at 92.71 68.58 0)
 			(effects
 				(font
@@ -1777,7 +1778,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/fc114c64-d761-4020-b59c-5aa26268bf21"
-					(reference "#PWR0125")
+					(reference "#PWR0126")
 					(unit 1)
 				)
 			)
@@ -1793,7 +1794,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60d32534-217e-4c95-85f4-7a3ac49440fa")
-		(property "Reference" "#PWR0128"
+		(property "Reference" "#PWR0129"
 			(at 92.71 99.06 0)
 			(effects
 				(font
@@ -1843,7 +1844,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/fc114c64-d761-4020-b59c-5aa26268bf21"
-					(reference "#PWR0128")
+					(reference "#PWR0129")
 					(unit 1)
 				)
 			)
@@ -2065,7 +2066,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9b23d447-6022-40a8-8824-8b03b63eea3a")
-		(property "Reference" "#PWR0122"
+		(property "Reference" "#PWR0123"
 			(at 77.47 38.1 0)
 			(effects
 				(font
@@ -2115,7 +2116,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/fc114c64-d761-4020-b59c-5aa26268bf21"
-					(reference "#PWR0122")
+					(reference "#PWR0123")
 					(unit 1)
 				)
 			)
@@ -2131,7 +2132,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a1331157-16ba-4d8a-8cc9-add13adaf42b")
-		(property "Reference" "#PWR0124"
+		(property "Reference" "#PWR0125"
 			(at 77.47 55.88 0)
 			(effects
 				(font
@@ -2181,7 +2182,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/fc114c64-d761-4020-b59c-5aa26268bf21"
-					(reference "#PWR0124")
+					(reference "#PWR0125")
 					(unit 1)
 				)
 			)
@@ -2197,7 +2198,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fdc3f41e-89bd-4b54-b813-59d2d7555f9f")
-		(property "Reference" "#PWR0127"
+		(property "Reference" "#PWR0128"
 			(at 66.04 99.06 0)
 			(effects
 				(font
@@ -2247,7 +2248,7 @@
 		(instances
 			(project "EjectionBuddy"
 				(path "/8eb0a75f-d01a-4f77-b089-39fac6868a70/fc114c64-d761-4020-b59c-5aa26268bf21"
-					(reference "#PWR0127")
+					(reference "#PWR0128")
 					(unit 1)
 				)
 			)
