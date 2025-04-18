@@ -2083,7 +2083,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "7d5b3764-35f0-45b9-bad5-01eae0264b82")
-		(property "Sheetname" "connecter"
+		(property "Sheetname" "connector"
 			(at 207.01 30.4034 0)
 			(effects
 				(font
@@ -2092,7 +2092,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "connecter.kicad_sch"
+		(property "Sheetfile" "connector.kicad_sch"
 			(at 207.01 93.2946 0)
 			(effects
 				(font

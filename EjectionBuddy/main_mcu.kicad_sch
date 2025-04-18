@@ -1920,6 +1920,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "You might prefer N8 variant over N4R2\nA bigger flash is useful in datalogging"
+		(exclude_from_sim no)
+		(at 127.508 52.578 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "31fff29f-0ea6-4b6c-b9ea-7cadeedf54c5")
+	)
 	(text "MCU module"
 		(exclude_from_sim no)
 		(at 106.426 48.768 0)
