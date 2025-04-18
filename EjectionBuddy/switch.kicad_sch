@@ -2985,157 +2985,6 @@
 		(cells
 			(table_cell "SW_STATE"
 				(exclude_from_sim no)
-				(at 118.11 170.18 0)
-				(size 11.43 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-				(uuid "ce01684a-525c-4358-b591-f05a8a1c40cd")
-			)
-			(table_cell "OUTPUT"
-				(exclude_from_sim no)
-				(at 129.54 170.18 0)
-				(size 11.43 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-				(uuid "f36f9a7b-1c37-46be-836c-dcabfeaa30eb")
-			)
-			(table_cell "HIGH"
-				(exclude_from_sim no)
-				(at 118.11 172.72 0)
-				(size 11.43 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-				(uuid "4531ed8b-25a1-4508-8be0-37d4ab4e2051")
-			)
-			(table_cell "floating"
-				(exclude_from_sim no)
-				(at 129.54 172.72 0)
-				(size 11.43 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-				(uuid "9f271459-5d00-4361-92a1-b7ffe9cb9928")
-			)
-			(table_cell "LOW"
-				(exclude_from_sim no)
-				(at 118.11 175.26 0)
-				(size 11.43 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-				(uuid "05b920dc-a714-4637-8f94-f52c80b4ab62")
-			)
-			(table_cell "V_{bat}"
-				(exclude_from_sim no)
-				(at 129.54 175.26 0)
-				(size 11.43 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-				(uuid "eb1898f9-2bbd-4969-a9a1-9546374c0709")
-			)
-			(table_cell "FLOAT"
-				(exclude_from_sim no)
-				(at 118.11 177.8 0)
-				(size 11.43 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-				(uuid "38d04cae-c93a-4cdd-9767-9f8699927f8e")
-			)
-			(table_cell "V_{bat}"
-				(exclude_from_sim no)
-				(at 129.54 177.8 0)
-				(size 11.43 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-				(uuid "7793b8cc-868c-41fb-abe7-453f1d4335c1")
-			)
-		)
-	)
-	(table
-		(column_count 2)
-		(border
-			(external yes)
-			(header yes)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-		)
-		(separators
-			(rows yes)
-			(cols yes)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-		)
-		(column_widths 11.43 11.43)
-		(row_heights 2.54 2.54 2.54 2.54)
-		(cells
-			(table_cell "SW_STATE"
-				(exclude_from_sim no)
 				(at 76.2 74.93 0)
 				(size 11.43 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
@@ -3249,6 +3098,157 @@
 			(table_cell "floating"
 				(exclude_from_sim no)
 				(at 87.63 82.55 0)
+				(size 11.43 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(uuid "7793b8cc-868c-41fb-abe7-453f1d4335c1")
+			)
+		)
+	)
+	(table
+		(column_count 2)
+		(border
+			(external yes)
+			(header yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(separators
+			(rows yes)
+			(cols yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(column_widths 11.43 11.43)
+		(row_heights 2.54 2.54 2.54 2.54)
+		(cells
+			(table_cell "SW_STATE"
+				(exclude_from_sim no)
+				(at 118.11 170.18 0)
+				(size 11.43 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(uuid "ce01684a-525c-4358-b591-f05a8a1c40cd")
+			)
+			(table_cell "OUTPUT"
+				(exclude_from_sim no)
+				(at 129.54 170.18 0)
+				(size 11.43 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(uuid "f36f9a7b-1c37-46be-836c-dcabfeaa30eb")
+			)
+			(table_cell "HIGH"
+				(exclude_from_sim no)
+				(at 118.11 172.72 0)
+				(size 11.43 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(uuid "4531ed8b-25a1-4508-8be0-37d4ab4e2051")
+			)
+			(table_cell "floating"
+				(exclude_from_sim no)
+				(at 129.54 172.72 0)
+				(size 11.43 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(uuid "9f271459-5d00-4361-92a1-b7ffe9cb9928")
+			)
+			(table_cell "LOW"
+				(exclude_from_sim no)
+				(at 118.11 175.26 0)
+				(size 11.43 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(uuid "05b920dc-a714-4637-8f94-f52c80b4ab62")
+			)
+			(table_cell "V_{bat}"
+				(exclude_from_sim no)
+				(at 129.54 175.26 0)
+				(size 11.43 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(uuid "eb1898f9-2bbd-4969-a9a1-9546374c0709")
+			)
+			(table_cell "FLOAT"
+				(exclude_from_sim no)
+				(at 118.11 177.8 0)
+				(size 11.43 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(uuid "38d04cae-c93a-4cdd-9767-9f8699927f8e")
+			)
+			(table_cell "V_{bat}"
+				(exclude_from_sim no)
+				(at 129.54 177.8 0)
 				(size 11.43 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)

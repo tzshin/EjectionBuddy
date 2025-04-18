@@ -1276,6 +1276,17 @@
 		)
 		(uuid "92b39b95-ddf3-46fe-9c85-ba316e3e5bbf")
 	)
+	(text "V_{bat} 30V max"
+		(exclude_from_sim no)
+		(at 182.626 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "af287a8c-da32-4a8a-b50a-f061160745ba")
+	)
 	(text "A/K stands for anode/cathode\nIt is connected to the on-board optocoupler"
 		(exclude_from_sim no)
 		(at 114.554 100.076 0)
