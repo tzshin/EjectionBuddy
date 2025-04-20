@@ -116,7 +116,7 @@
 		)
 		(uuid "42f2489d-09f6-4a27-b30f-35df143ecd50")
 	)
-	(text "v0.2.1"
+	(text "v0.2.2"
 		(exclude_from_sim no)
 		(at 268.478 193.294 0)
 		(effects
