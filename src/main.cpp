@@ -7,6 +7,7 @@ constexpr int PIN_RXO_RX = 6;
 constexpr int PIN_RXO_TX = 7;
 constexpr int PIN_DD_SENSE = 10;
 constexpr int PIN_LED = 42;
+constexpr int PIN_CAM_1 = 1;
 HardwareSerial serial_rxi(1);
 HardwareSerial serial_rxo(2);
 
@@ -15,38 +16,60 @@ AlfredoCRSF crsf_rxo;
 
 bool is_detatched = false;
 
-unsigned long staging_start_ts = 0;
-unsigned long staging_duration = 3000; // In milliseconds
-
-enum class KillState
+enum class MissionPhase
 {
-  FORCE_KILL,
-  FORCE_UNKILL,
-  PASSTHROUGH
+  STANDBY,
+  PRE_EJECTION,
+  EJECTION,
+  POST_EJECTION,
 };
 
-void send_raw_channels(KillState kill_state)
+MissionPhase mission_phase = MissionPhase::PRE_EJECTION;
+unsigned long ejection_start_ts = 0;
+const unsigned long ejection_duration = 3000; // In milliseconds
+
+void update_ejection_phase(bool is_preflight)
+{
+  switch (mission_phase)
+  {
+  case MissionPhase::STANDBY:
+    if (is_preflight)
+    {
+      mission_phase = MissionPhase::PRE_EJECTION;
+    }
+    break;
+  case MissionPhase::PRE_EJECTION:
+    if (!is_preflight)
+    {
+      mission_phase = MissionPhase::STANDBY;
+    }
+    if (is_detatched)
+    {
+      mission_phase = MissionPhase::EJECTION;
+      ejection_start_ts = millis();
+    }
+    break;
+  case MissionPhase::EJECTION:
+    if (millis() - ejection_start_ts >= ejection_duration)
+    {
+      mission_phase = MissionPhase::POST_EJECTION;
+    }
+    break;
+  case MissionPhase::POST_EJECTION:
+    break;
+  }
+}
+
+void send_raw_channels()
 {
   const crsf_channels_t *channels_raw = crsf_rxi.getChannelsPacked();
 
   crsf_channels_t channels = *channels_raw;
 
-  switch (kill_state)
-  {
-  case KillState::FORCE_KILL:
-    channels.ch6 = CRSF_CHANNEL_VALUE_2000;
-    break;
-  case KillState::FORCE_UNKILL:
-    channels.ch6 = CRSF_CHANNEL_VALUE_1000;
-    break;
-  case KillState::PASSTHROUGH:
-    break;
-  }
-
   crsf_rxo.writePacket(CRSF_SYNC_BYTE, CRSF_FRAMETYPE_RC_CHANNELS_PACKED, &channels, sizeof(channels));
 }
 
-void send_auto_channels(KillState kill_state)
+void send_auto_channels(MissionPhase mission_phase)
 {
   crsf_channels_t channels = {0};
   channels.ch0 = CRSF_CHANNEL_VALUE_MID;
@@ -54,22 +77,31 @@ void send_auto_channels(KillState kill_state)
   channels.ch2 = CRSF_CHANNEL_VALUE_MID;
   channels.ch3 = CRSF_CHANNEL_VALUE_MID;
   channels.ch4 = CRSF_CHANNEL_VALUE_2000;
-  channels.ch5 = CRSF_CHANNEL_VALUE_1000;
 
-  switch (kill_state)
+  switch (mission_phase)
   {
-  case KillState::FORCE_KILL:
+  case MissionPhase::STANDBY:
+    channels.ch5 = CRSF_CHANNEL_VALUE_1000;
     channels.ch6 = CRSF_CHANNEL_VALUE_2000;
+    channels.ch7 = CRSF_CHANNEL_VALUE_1000;
     break;
-  case KillState::FORCE_UNKILL:
+  case MissionPhase::PRE_EJECTION:
+    channels.ch5 = CRSF_CHANNEL_VALUE_1000;
+    channels.ch6 = CRSF_CHANNEL_VALUE_2000;
+    channels.ch7 = CRSF_CHANNEL_VALUE_2000;
+    break;
+  case MissionPhase::EJECTION:
+    channels.ch5 = CRSF_CHANNEL_VALUE_2000;
     channels.ch6 = CRSF_CHANNEL_VALUE_1000;
+    channels.ch7 = CRSF_CHANNEL_VALUE_2000;
     break;
-  case KillState::PASSTHROUGH:
-    channels.ch6 = crsf_rxi.getChannelsPacked()->ch6;
+  case MissionPhase::POST_EJECTION:
+    channels.ch5 = CRSF_CHANNEL_VALUE_1000;
+    channels.ch6 = CRSF_CHANNEL_VALUE_1000;
+    channels.ch7 = CRSF_CHANNEL_VALUE_2000;
     break;
   }
 
-  channels.ch7 = CRSF_CHANNEL_VALUE_2000;
   channels.ch8 = CRSF_CHANNEL_VALUE_1000;
   channels.ch9 = CRSF_CHANNEL_VALUE_1000;
   channels.ch10 = CRSF_CHANNEL_VALUE_1000;
@@ -87,9 +119,17 @@ void setup()
   Serial.begin(115200);
 
   serial_rxi.begin(CRSF_BAUDRATE, SERIAL_8N1, PIN_RXI_RX, PIN_RXI_TX);
+  delay(100);
   serial_rxo.begin(CRSF_BAUDRATE, SERIAL_8N1, PIN_RXO_RX, PIN_RXO_TX);
-  delay(1000);
+  delay(100);
+  while (!serial_rxi)
+    ;
+  delay(100);
+  while (!serial_rxo)
+    ;
+  delay(100);
   crsf_rxi.begin(serial_rxi);
+  delay(100);
   crsf_rxo.begin(serial_rxo);
 
   pinMode(PIN_DD_SENSE, INPUT);
@@ -98,49 +138,35 @@ void setup()
 
   pinMode(PIN_LED, OUTPUT);
   digitalWrite(PIN_LED, LOW);
+
+  pinMode(PIN_CAM_1, OUTPUT);
+  digitalWrite(PIN_CAM_1, LOW);
 }
 
 void loop()
 {
   crsf_rxi.update();
   bool is_bypassed = crsf_rxi.getChannelsPacked()->ch8 > CRSF_CHANNEL_VALUE_MID ? true : false;
+  bool is_preflight = crsf_rxi.getChannelsPacked()->ch10 > CRSF_CHANNEL_VALUE_MID ? true : false;
+
+  update_ejection_phase(is_preflight);
 
   if (crsf_rxi.isLinkUp())
   {
     digitalWrite(PIN_LED, HIGH);
-    if (is_bypassed)
-    {
-      send_raw_channels(KillState::PASSTHROUGH);
-    }
-    else
-    {
-      if (is_detatched)
-      {
-        send_raw_channels(KillState::FORCE_UNKILL);
-      }
-      else
-      {
-        send_raw_channels(KillState::FORCE_KILL);
-      }
-    }
+    is_bypassed ? send_raw_channels() : send_auto_channels(mission_phase);
   }
   else
   {
     digitalWrite(PIN_LED, LOW);
-    if (is_detatched)
-    {
-      send_auto_channels(KillState::FORCE_UNKILL);
-    }
-    else
-    {
-      send_auto_channels(KillState::FORCE_KILL);
-    }
+    send_auto_channels(mission_phase);
   }
 
-  if (serial_rxo.available())
+  digitalWrite(PIN_CAM_1, mission_phase != MissionPhase::STANDBY ? HIGH : LOW);
+
+  while (serial_rxo.available() > 0)
   {
-    uint8_t buf[64];
-    int len = serial_rxo.readBytes(buf, sizeof(buf));
-    serial_rxi.write(buf, len);
+    uint8_t b = serial_rxo.read();
+    serial_rxi.write(b);
   }
 }
